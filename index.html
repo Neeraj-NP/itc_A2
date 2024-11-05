@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDU Factorization with Elimination Matrices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>LDU Factorization Using Elimination Matrices</h1>
+
+    <!-- Dimension Input Section -->
+    <div id="dimension-section">
+      <label for="dimension">Enter Matrix Dimension (e.g., 3 for a 3x3 matrix):</label>
+      <input type="number" id="dimension" min="2" placeholder="Matrix dimension">
+      <button onclick="setupMatrix()">Next</button>
+    </div>
+
+    <!-- Matrix Elements Input Section -->
+    <div id="matrix-elements-section" style="display: none;">
+      <h2>Enter Matrix Elements</h2>
+      <div id="matrix-fields"></div>
+      <button onclick="performLDU()">Perform LDU Factorization</button>
+    </div>
+
+    <!-- LDU Steps Display Section -->
+    <div id="matrix-step-section" class="matrix-step" style="display: none;">
+      <h2>Step-by-Step LDU Decomposition</h2>
+      <div id="steps"></div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
